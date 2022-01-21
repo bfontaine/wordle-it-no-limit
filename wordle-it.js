@@ -981,14 +981,6 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
   }
   var Ha, Ga = "abcdefghijklmnopqrstuvwxyz";
 
-  function Da() {
-      dataLayer.push(arguments)
-  }
-  window.dataLayer = window.dataLayer || [], Da("js", new Date);
-  Da("config", "G-2SSGMHY3NP", {
-      app_version: null === (Ha = window.wordle) || void 0 === Ha ? void 0 : Ha.hash,
-      debug_mode: !1
-  });
   var Ba = [].concat(g(Ga.split("").slice(13)), g(Ga.split("").slice(0, 13)));
 
   function Fa(e) {
@@ -1061,9 +1053,8 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                   evaluations: e.evaluations,
                   solution: e.solution,
                   gameStatus: e.gameStatus
-              }), Da("event", "level_start", {
-                  level_name: Fa(e.solution)
-              })) : (e.boardState = o.boardState, e.evaluations = o.evaluations, e.rowIndex = o.rowIndex, e.solution = o.solution, e.dayOffset = Na(e.today), e.letterEvaluations = Oa(e.boardState, e.evaluations), e.gameStatus = o.gameStatus, e.lastCompletedTs = o.lastCompletedTs, e.hardMode = o.hardMode, e.gameStatus !== Qa && (e.canInput = !1), e.restoringFromLocalStorage = !0), e
+              })
+              return e
           }
           return o(t, [{
               key: "evaluateRow",
@@ -1125,11 +1116,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                           numGuesses: this.rowIndex
                       }), ja({
                           lastCompletedTs: Date.now()
-                      }), this.gameStatus = l ? Za : es, Da("event", "level_end", {
-                          level_name: Fa(this.solution),
-                          num_guesses: this.rowIndex,
-                          success: l
-                      });
+                      }), this.gameStatus = l ? Za : es;
                       this.tileIndex = 0, this.canInput = !1, ja({
                           rowIndex: this.rowIndex,
                           boardState: this.boardState,
