@@ -137,7 +137,7 @@ nbCode:
 
   sizeFont = squareSide / 3
   font = newFont(typeface, sizeFont, black)
-  let text2 = "UN GIOCO DI PAROLE AL GIORNO"
+  let text2 = "UN GIOCO DI PAROLE"
   image2.fillText(font, text2, transform = translate(vec2(horizontalMargin, topMargin + squareSide + vertGap)), bounds = vec2(1080, sizeFont), hAlign = haCenter, vAlign = vaMiddle)
 
   let flag = readImage("images/flag_italy.png")
