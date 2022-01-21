@@ -1,4 +1,8 @@
-# Par🇮🇹le
+# Par🇮🇹le no-limit
+
+Una versione di Par🇮🇹le senza limiti: ogni volta una parola differente.
+
+README di origine:
 
 https://pietroppeter.github.io/wordle-it/
 
@@ -7,6 +11,8 @@ Una versione italiana (non ufficiale) di [WORDLE](https://powerlanguage.co.uk/wo
 Dizionari presi da https://github.com/napolux/paroleitaliane e https://github.com/sigmasaur/AnagramSolver
 
 # English
+
+This is a fork of Par🇮🇹le that removes the daily game limit. Original README:
 
 An italian version of https://powerlanguage.co.uk/wordle/. Waiting from official approval (if not approved this will be taken down): https://twitter.com/pietroppeter/status/1477993203425030144?s=20
 
